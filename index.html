@@ -1352,15 +1352,18 @@
               <td>
                 <div class="capability-tags">
                   <span class="cap-tag has">活动发布</span><span class="cap-tag has">活动报名</span><span class="cap-tag has">活动分类</span>
-                  <span class="cap-tag has">用户报名参与</span><span class="cap-tag has">协会内外成员免费使用</span><span class="cap-tag has">普通协会活动</span>
+                  <span class="cap-tag has">用户协议</span><span class="cap-tag has">签到核销</span><span class="cap-tag has">数据导出</span>
+                  <span class="cap-tag has">活动相册/成果展示</span><span class="cap-tag has">我的活动/订单</span>
+                  <span class="cap-tag has">商家主页/景区展示</span><span class="cap-tag has">路线推荐（人工维护）</span>
                 </div>
               </td>
               <td>
                 <div class="capability-tags">
-                  <span class="cap-tag miss">保险信息</span><span class="cap-tag miss">风险告知</span><span class="cap-tag miss">活动反馈/评论</span>
-                  <span class="cap-tag miss">签到</span><span class="cap-tag miss">积分</span><span class="cap-tag miss">成长等级</span>
-                  <span class="cap-tag miss">会员身份</span><span class="cap-tag miss">志愿者/领队身份</span>
-                  <span class="cap-tag miss">赛事报名/分组/成绩</span><span class="cap-tag miss">完整用户运营能力</span>
+                  <span class="cap-tag miss">风险告知</span><span class="cap-tag miss">保险信息</span>
+                  <span class="cap-tag miss">活动反馈</span><span class="cap-tag miss">积分</span><span class="cap-tag miss">成长等级</span>
+                  <span class="cap-tag miss">会员身份</span><span class="cap-tag miss">兴趣标签</span>
+                  <span class="cap-tag miss">志愿者/领队身份</span><span class="cap-tag miss">赛事报名/分组/成绩</span>
+                  <span class="cap-tag miss">完整用户运营能力</span><span class="cap-tag miss">会员权益绑定</span>
                 </div>
               </td>
             </tr>
@@ -1369,7 +1372,7 @@
       </div>
       <div class="highlight-box amber" style="margin-top:14px;">
         <div class="hl-title">当前阶段定位</div>
-        小程序目前是<strong>基础活动报名平台</strong>，还不是完整活动运营平台、会员运营平台、赛事管理平台或产业生态平台。
+        小程序目前是<strong>协会数字化活动与资源服务平台的雏形</strong>，已具备活动管理闭环的基础能力，但还缺少用户运营深度功能和会员权益绑定机制。
       </div>
     </div>
 
@@ -1384,21 +1387,21 @@
           <tbody>
             <tr>
               <td><strong>路径一：城市青年公共服务平台</strong></td>
-              <td><span class="cap-tag has">较高</span></td>
-              <td>政府/公益/青年活动的报名和数据记录工具</td>
-              <td>需补：风险告知、签到、反馈、数据导出</td>
+              <td><span class="priority-tag done">高</span></td>
+              <td>政府/公益/青年活动的数字化管理工具</td>
+              <td>功能基本具备，重点是制度化使用</td>
             </tr>
             <tr>
               <td><strong>路径二：洛阳青年文旅户外消费入口</strong></td>
-              <td><span class="cap-tag mid">中等</span></td>
-              <td>青年活动发布、报名、用户沉淀入口</td>
+              <td><span class="priority-tag soon">中高</span></td>
+              <td>青年活动报名入口 + 用户沉淀入口</td>
               <td>需补：会员身份、兴趣标签、活动日历、社群入口</td>
             </tr>
             <tr>
               <td><strong>路径三：区域户外产业生态组织</strong></td>
-              <td><span class="cap-tag miss">较低→中等</span></td>
-              <td>会员单位活动展示和资源入口的雏形</td>
-              <td>需补：认证发布、商家展示、赞助反馈、资源图谱</td>
+              <td><span class="priority-tag soon">中高</span></td>
+              <td>会员单位展示和产业资源线上入口</td>
+              <td>需补：认证发布、赞助反馈、会员权益绑定、审核机制</td>
             </tr>
             <tr>
               <td><strong>赛事类活动方向</strong></td>
@@ -1411,7 +1414,7 @@
       </div>
       <div class="highlight-box amber" style="margin-top:14px;">
         <div class="hl-title">总判断</div>
-        小程序<strong>不是万能平台</strong>，但可以作为协会三条路径里的数字化底座，只是每条路径中承担的角色不同。它<strong>当前适合做「协会正式活动的数字化入口」，中期可以做「青年用户运营入口」，长期才适合做「会员企业和产业资源连接入口」。</strong>
+        小程序<strong>不是万能平台</strong>，但已经可以作为协会三条路径里的数字化底座。它<strong>当前适合做「协会正式活动的数字化入口」，中期可以做「青年用户运营入口」，长期适合做「会员企业和产业资源连接入口」。</strong>
       </div>
     </div>
 
@@ -1451,13 +1454,15 @@
 
       <h4>该路径下最应该补的功能（按优先级）</h4>
       <div class="tag-row">
-        <span class="priority-tag urgent">1. 风险告知/免责声明</span>
-        <span class="priority-tag urgent">2. 活动签到</span>
-        <span class="priority-tag urgent">3. 后台数据导出</span>
-        <span class="priority-tag urgent">4. 活动结束反馈表</span>
-        <span class="priority-tag urgent">5. 活动成果展示</span>
+        <span class="priority-tag done">用户协议 ✓ 已有</span>
+        <span class="priority-tag done">签到核销 ✓ 已有</span>
+        <span class="priority-tag done">数据导出 ✓ 已有</span>
+        <span class="priority-tag done">活动相册/成果展示 ✓ 已有</span>
+        <span class="priority-tag urgent">风险告知/免责声明</span>
+        <span class="priority-tag soon">活动满意度反馈</span>
+        <span class="priority-tag soon">保险信息字段</span>
       </div>
-      <p style="font-size:13px;color:#888;margin-top:8px;">这几个功能能直接服务政府汇报，让协会从「临时拉群组织活动」升级为「有数字化管理能力的青年社会组织」，直接提升公信力和项目承接能力。</p>
+      <p style="font-size:13px;color:#16a34a;margin-top:8px;">路径一的数字化管理闭环基础功能已具备。当前重点是<strong>制度化使用</strong>和补充风险告知，而非功能开发。这能让协会对政府展示「有数字化管理能力的青年社会组织」形象。</p>
     </div>
 
     <!-- 3.4 路径二详解 -->
@@ -1497,13 +1502,15 @@
 
       <h4>该路径下最应该补的功能（按优先级）</h4>
       <div class="tag-row">
+        <span class="priority-tag done">我的报名/我的活动 ✓ 已有</span>
+        <span class="priority-tag done">活动分类 ✓ 已有</span>
+        <span class="priority-tag done">活动相册 ✓ 已有</span>
         <span class="priority-tag soon">1. 活动日历</span>
-        <span class="priority-tag soon">2. 我的报名/我的活动</span>
-        <span class="priority-tag soon">3. 兴趣标签</span>
-        <span class="priority-tag soon">4. 基础会员身份</span>
-        <span class="priority-tag soon">5. 社群入口</span>
-        <span class="priority-tag soon">6. 活动反馈</span>
-        <span class="priority-tag soon">7. 会员专属活动或会员价</span>
+        <span class="priority-tag soon">2. 兴趣标签</span>
+        <span class="priority-tag soon">3. 基础会员身份</span>
+        <span class="priority-tag soon">4. 社群入口</span>
+        <span class="priority-tag soon">5. 活动反馈</span>
+        <span class="priority-tag soon">6. 会员专属活动或会员价</span>
       </div>
       <p style="font-size:13px;color:#888;margin-top:8px;">积分、等级可以暂缓。核心目标：从「每场活动重新拉人」变成「有一批可重复触达、可分类运营的青年用户」。前提是活动稳定、统一报名、参与记录被沉淀、公众号+微信群+小程序形成组合。</p>
     </div>
@@ -1546,16 +1553,17 @@
 
       <h4>该路径下最应该补的功能（分阶段，不一次做完）</h4>
       <div class="tag-row">
+        <span class="priority-tag done">商家/景区展示专区 ✓ 已有</span>
+        <span class="priority-tag done">独立商家主页 ✓ 已有</span>
+        <span class="priority-tag done">户外路线推荐 ✓ 已有（人工维护）</span>
         <span class="priority-tag later">1. 会员单位认证身份</span>
         <span class="priority-tag later">2. 会员单位活动发布申请</span>
         <span class="priority-tag later">3. 协会审核机制</span>
-        <span class="priority-tag later">4. 商家/景区展示专区</span>
-        <span class="priority-tag later">5. 赞助商露出位</span>
-        <span class="priority-tag later">6. 活动数据反馈报表</span>
-        <span class="priority-tag later">7. 青年友好商家/场地推荐</span>
-        <span class="priority-tag later">8. 户外线路推荐</span>
+        <span class="priority-tag later">4. 赞助商露出位</span>
+        <span class="priority-tag later">5. 活动数据反馈报表</span>
+        <span class="priority-tag later">6. 青年友好商家/场地推荐</span>
       </div>
-      <p style="font-size:13px;color:#888;margin-top:8px;">等用户和活动数据有一定基础后再做，避免过早开放变成广告平台。</p>
+      <p style="font-size:13px;color:#888;margin-top:8px;">展示基础已有，但还缺商业规则和会员权益绑定。等用户和活动数据有一定基础后再补，避免过早开放变成广告平台。</p>
     </div>
 
     <!-- 3.6 赛事路径 -->
@@ -1613,19 +1621,22 @@
             <tr><th>功能模块</th><th>路径一：公共服务</th><th>路径二：消费入口</th><th>路径三：产业生态</th><th>当前建议</th></tr>
           </thead>
           <tbody>
-            <tr><td>活动发布</td><td><span class="priority-tag done">高</span></td><td><span class="priority-tag done">高</span></td><td>中</td><td>已有，继续强化</td></tr>
-            <tr><td>活动报名</td><td><span class="priority-tag done">高</span></td><td><span class="priority-tag done">高</span></td><td>中</td><td>已有，继续统一入口</td></tr>
+            <tr><td>活动发布</td><td><span class="priority-tag done">高</span></td><td><span class="priority-tag done">高</span></td><td>中</td><td><span class="priority-tag done">已有</span></td></tr>
+            <tr><td>活动报名</td><td><span class="priority-tag done">高</span></td><td><span class="priority-tag done">高</span></td><td>中</td><td><span class="priority-tag done">已有</span></td></tr>
+            <tr><td>用户协议</td><td><span class="priority-tag done">已有</span></td><td>中</td><td>中</td><td><span class="priority-tag done">已有</span></td></tr>
             <tr><td>风险告知</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td>中</td><td><span class="priority-tag urgent">优先补</span></td></tr>
-            <tr><td>签到核销</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td>中</td><td><span class="priority-tag urgent">优先补</span></td></tr>
-            <tr><td>后台数据导出</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">优先补</span></td></tr>
+            <tr><td>签到核销</td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td><td>中</td><td><span class="priority-tag done">已有</span></td></tr>
+            <tr><td>后台数据导出</td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td></tr>
+            <tr><td>活动相册</td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td><td>中</td><td><span class="priority-tag done">已有</span></td></tr>
             <tr><td>活动反馈表</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td>中</td><td><span class="priority-tag urgent">优先补</span></td></tr>
             <tr><td>活动日历</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>中</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
-            <tr><td>我的活动</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>低</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
+            <tr><td>我的活动</td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td><td>低</td><td><span class="priority-tag done">已有</span></td></tr>
             <tr><td>兴趣标签</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>中</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
             <tr><td>个人会员身份</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>中</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
             <tr><td>企业会员身份</td><td>低</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">6-12 月补</span></td></tr>
             <tr><td>会员单位发布活动</td><td>低</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">暂缓，需审核机制</span></td></tr>
-            <tr><td>商家/景区展示</td><td>低</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">暂缓或试点</span></td></tr>
+            <tr><td>商家/景区展示</td><td>低</td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有，需持续运营</span></td></tr>
+            <tr><td>路线推荐</td><td>中</td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有</span></td><td><span class="priority-tag done">已有，需安全分级</span></td></tr>
             <tr><td>赞助商反馈</td><td>中</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">6-12 月补</span></td></tr>
             <tr><td>积分等级</td><td>低</td><td>中</td><td>低</td><td><span class="priority-tag later">暂缓</span></td></tr>
             <tr><td>评论区</td><td>低</td><td>中</td><td>低</td><td><span class="priority-tag later">暂缓</span></td></tr>
@@ -1666,7 +1677,7 @@
           <div class="tl-title">路径一：公共服务平台</div>
           <div class="tl-target">1-3 月重点</div>
           <div class="tl-desc">
-            最需要基础数据，而不一定要求高频使用。小程序当前能力最能匹配：活动发布+报名+签到+数据导出。
+            核心功能（用户协议、签到核销、数据导出、活动相册）已具备。不需要高频使用但要求正规。重点是制度化使用。
           </div>
         </div>
         <div class="tl-card tl-2">
@@ -1697,23 +1708,27 @@
           <div class="st-time">第 1–3 月</div>
           <div class="st-goal">服务路径一为主</div>
           <div class="st-detail">
-            <strong>要补的功能：</strong><br>
-            · 正式活动报名（已有）<br>
-            · 风险告知<br>
-            · 签到核销<br>
-            · 数据导出<br>
-            · 反馈表<br><br>
+            <strong>已有功能：</strong><br>
+            · 正式活动报名 ✓<br>
+            · 用户协议 ✓<br>
+            · 签到核销 ✓<br>
+            · 数据导出 ✓<br>
+            · 活动相册 ✓<br><br>
+            <strong>要补：</strong>风险告知<br>
             <strong>目标：</strong><br>
-            让协会正式活动数字化。
+            制度化使用已有功能，让协会正式活动全部走小程序。
           </div>
         </div>
         <div class="step s2">
           <div class="st-time">第 3–6 月</div>
           <div class="st-goal">服务路径二为主</div>
           <div class="st-detail">
+            <strong>已有功能：</strong><br>
+            · 我的活动/订单 ✓<br>
+            · 活动分类 ✓<br>
+            · 活动相册 ✓<br><br>
             <strong>要补的功能：</strong><br>
             · 活动日历<br>
-            · 我的活动<br>
             · 兴趣标签<br>
             · 个人会员<br>
             · 社群入口<br><br>
@@ -1725,12 +1740,15 @@
           <div class="st-time">第 6–12 月</div>
           <div class="st-goal">开始服务路径三</div>
           <div class="st-detail">
+            <strong>已有功能：</strong><br>
+            · 商家主页 ✓<br>
+            · 景区展示 ✓<br>
+            · 路线推荐 ✓<br><br>
             <strong>要补的功能：</strong><br>
-            · 会员单位展示<br>
+            · 会员单位认证<br>
             · 认证活动申请<br>
-            · 商家福利<br>
             · 赞助商反馈<br>
-            · 景区线路推荐<br><br>
+            · 商家权益规则<br><br>
             <strong>目标：</strong><br>
             让协会开始连接产业资源。
           </div>
