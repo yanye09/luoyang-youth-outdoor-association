@@ -3,7 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>洛阳市青年户外协会 — 两层战略分析</title>
+<title>洛阳市青年户外协会 — 战略分析（含小程序适配）</title>
 <style>
   :root {
     --bg: #f5f5f5;
@@ -21,6 +21,8 @@
     --red-light: #fef2f2;
     --green: #059669;
     --green-light: #ecfdf5;
+    --teal: #0d9488;
+    --teal-light: #f0fdfa;
     --radius: 10px;
   }
 
@@ -528,6 +530,80 @@
     font-weight: 700;
     color: var(--blue);
   }
+
+  /* ===== Mini-Program Section ===== */
+  .layer-header .layer-num.l3 { background: var(--teal); }
+  .question-block.q3 { background: var(--teal-light); border-left: 4px solid var(--teal); }
+  .question-block.q3 .q-label { color: var(--teal); }
+
+  .capability-tags { display: flex; gap: 8px; flex-wrap: wrap; margin: 8px 0; }
+  .cap-tag {
+    font-size: 12px; padding: 3px 10px; border-radius: 12px; font-weight: 500;
+  }
+  .cap-tag.has { background: #d1fae5; color: #065f46; }
+  .cap-tag.miss { background: #fee2e2; color: #991b1b; }
+  .cap-tag.mid { background: #fef3c7; color: #92400e; }
+
+  .priority-tag {
+    font-size: 11px; padding: 2px 10px; border-radius: 10px; font-weight: 600;
+    white-space: nowrap;
+  }
+  .priority-tag.urgent { background: #fee2e2; color: #991b1b; }
+  .priority-tag.soon { background: #fef3c7; color: #92400e; }
+  .priority-tag.later { background: #f3f4f6; color: #6b7280; }
+  .priority-tag.done { background: #d1fae5; color: #065f46; }
+
+  .quote-block {
+    background: #f8fafc;
+    border-left: 3px solid var(--teal);
+    padding: 14px 18px;
+    border-radius: 0 8px 8px 0;
+    margin: 12px 0;
+    font-size: 14px;
+    line-height: 1.7;
+    color: #333;
+  }
+  .quote-block.qb-blue { border-left-color: var(--blue); }
+  .quote-block.qb-purple { border-left-color: var(--purple); }
+
+  .mp-path-card {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 18px 20px;
+    background: #fff;
+  }
+  .mp-path-card .mp-header {
+    display: flex; align-items: center; gap: 10px; margin-bottom: 10px;
+  }
+  .mp-path-card .mp-icon {
+    width: 40px; height: 40px; border-radius: 50%;
+    display: flex; align-items: center; justify-content: center;
+    font-weight: 900; font-size: 18px; color: #fff; flex-shrink: 0;
+  }
+  .mp-path-card .mp-icon.i1 { background: var(--blue); }
+  .mp-path-card .mp-icon.i2 { background: var(--purple); }
+  .mp-path-card .mp-icon.i3 { background: var(--green); }
+
+  .step-flow {
+    display: flex; gap: 12px; margin: 16px 0; flex-wrap: wrap;
+  }
+  .step-flow .step {
+    flex: 1; min-width: 200px;
+    border-radius: 8px; padding: 16px; text-align: center;
+    border: 1px solid #e5e7eb; background: #fff;
+  }
+  .step-flow .step .st-time {
+    font-size: 11px; font-weight: 700; color: #888; margin-bottom: 4px;
+  }
+  .step-flow .step .st-goal {
+    font-weight: 700; font-size: 14px; margin-bottom: 6px;
+  }
+  .step-flow .step .st-detail {
+    font-size: 12px; color: #666; line-height: 1.6; text-align: left;
+  }
+  .step-flow .step.s1 { border-top: 3px solid var(--blue); }
+  .step-flow .step.s2 { border-top: 3px solid var(--purple); }
+  .step-flow .step.s3 { border-top: 3px solid var(--teal); }
 </style>
 </head>
 <body>
@@ -1199,6 +1275,446 @@
         <div class="hl-title">最终战略判断</div>
         协会真正的机会，是成为洛阳市<strong>「连接青年、政府、文旅场景、会员企业、户外产业的关键组织」</strong>——既是青年城市生活方式组织者，也是青年友好型城市建设参与者，还是区域户外文旅产业连接者。
       </div>
+    </div>
+  </div>
+
+  <!-- ==================== 第三层：小程序适配分析 ==================== -->
+  <div class="layer-section">
+    <div class="layer-header">
+      <span class="layer-num l3">第三层</span>
+      <h2>小程序适配分析：三条路径中的数字化底座</h2>
+    </div>
+
+    <div class="question-block q3">
+      <div class="q-label">核心问题</div>
+      同一个协会小程序，放在三条发展路径中，其定位、功能优先级和价值完全不同。不是问「小程序能不能用」，而是问「每条路径中，小程序分别扮演什么角色、当前能支撑到什么程度、需要补什么」。
+    </div>
+
+    <!-- 3.1 当前能力判断 -->
+    <div class="card">
+      <h3>一、小程序当前能力判断</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th style="width:50%;">当前已具备</th><th style="width:50%;">当前缺失</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <div class="capability-tags">
+                  <span class="cap-tag has">活动发布</span><span class="cap-tag has">活动报名</span><span class="cap-tag has">活动分类</span>
+                  <span class="cap-tag has">用户报名参与</span><span class="cap-tag has">协会内外成员免费使用</span><span class="cap-tag has">普通协会活动</span>
+                </div>
+              </td>
+              <td>
+                <div class="capability-tags">
+                  <span class="cap-tag miss">保险信息</span><span class="cap-tag miss">风险告知</span><span class="cap-tag miss">活动反馈/评论</span>
+                  <span class="cap-tag miss">签到</span><span class="cap-tag miss">积分</span><span class="cap-tag miss">成长等级</span>
+                  <span class="cap-tag miss">会员身份</span><span class="cap-tag miss">志愿者/领队身份</span>
+                  <span class="cap-tag miss">赛事报名/分组/成绩</span><span class="cap-tag miss">完整用户运营能力</span>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="highlight-box amber" style="margin-top:14px;">
+        <div class="hl-title">当前阶段定位</div>
+        小程序目前是<strong>基础活动报名平台</strong>，还不是完整活动运营平台、会员运营平台、赛事管理平台或产业生态平台。
+      </div>
+    </div>
+
+    <!-- 3.2 总体匹配判断 -->
+    <div class="card">
+      <h3>二、匹配到三条发展路径中的总体判断</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>发展路径</th><th>当前匹配度</th><th>当前可承担角色</th><th>是否需要升级</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>路径一：城市青年公共服务平台</strong></td>
+              <td><span class="cap-tag has">较高</span></td>
+              <td>政府/公益/青年活动的报名和数据记录工具</td>
+              <td>需补：风险告知、签到、反馈、数据导出</td>
+            </tr>
+            <tr>
+              <td><strong>路径二：洛阳青年文旅户外消费入口</strong></td>
+              <td><span class="cap-tag mid">中等</span></td>
+              <td>青年活动发布、报名、用户沉淀入口</td>
+              <td>需补：会员身份、兴趣标签、活动日历、社群入口</td>
+            </tr>
+            <tr>
+              <td><strong>路径三：区域户外产业生态组织</strong></td>
+              <td><span class="cap-tag miss">较低→中等</span></td>
+              <td>会员单位活动展示和资源入口的雏形</td>
+              <td>需补：认证发布、商家展示、赞助反馈、资源图谱</td>
+            </tr>
+            <tr>
+              <td><strong>赛事类活动方向</strong></td>
+              <td><span class="cap-tag miss">较低</span></td>
+              <td>赛事宣传入口或轻赛事报名入口</td>
+              <td>专业赛事功能建议独立或第三方解决</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="highlight-box amber" style="margin-top:14px;">
+        <div class="hl-title">总判断</div>
+        小程序<strong>不是万能平台</strong>，但可以作为协会三条路径里的数字化底座，只是每条路径中承担的角色不同。它<strong>当前适合做「协会正式活动的数字化入口」，中期可以做「青年用户运营入口」，长期才适合做「会员企业和产业资源连接入口」。</strong>
+      </div>
+    </div>
+
+    <!-- 3.3 路径一详解 -->
+    <div class="card">
+      <h3>三、路径一：城市青年公共服务平台中的小程序定位</h3>
+
+      <div class="mp-path-card" style="margin-bottom:16px;">
+        <div class="mp-header">
+          <div class="mp-icon i1">一</div>
+          <div>
+            <div style="font-weight:700;font-size:16px;">小程序在该路径中的角色</div>
+            <div style="font-size:13px;color:#888;">匹配度：较高。这是当前小程序最适配的路径。</div>
+          </div>
+        </div>
+        <div class="highlight-box blue">
+          <strong>政府和协会正式活动的数字化报名与数据归档工具。</strong><br>
+          不一定要高频，但要「正规」——活动有记录、报名可统计、人员可管理、数据可汇报、活动成果可沉淀。
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>活动类型</th><th>是否适合当前小程序</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>青年城市徒步</td><td><span class="cap-tag has">适合</span></td><td>标准活动流程，报名即可</td></tr>
+            <tr><td>青年公益净山</td><td><span class="cap-tag has">适合</span></td><td>公益类活动，签到是关键</td></tr>
+            <tr><td>青年友好城市体验</td><td><span class="cap-tag has">适合</span></td><td>需要反馈表和数据导出</td></tr>
+            <tr><td>青年文旅打卡</td><td><span class="cap-tag has">适合</span></td><td>轻量活动，基础功能即可</td></tr>
+            <tr><td>志愿公益活动</td><td><span class="cap-tag mid">基本适合</span></td><td>需要签到核销和数据统计</td></tr>
+            <tr><td>青年交友活动</td><td><span class="cap-tag mid">基本适合</span></td><td>需要隐私保护和分组设计</td></tr>
+            <tr><td>政府项目类活动</td><td><span class="cap-tag mid">基本适合</span></td><td>需数据导出能力</td></tr>
+            <tr><td>高风险户外活动</td><td><span class="cap-tag miss">暂不完全适合</span></td><td>需要风险告知和保险字段</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>该路径下最应该补的功能（按优先级）</h4>
+      <div class="tag-row">
+        <span class="priority-tag urgent">1. 风险告知/免责声明</span>
+        <span class="priority-tag urgent">2. 活动签到</span>
+        <span class="priority-tag urgent">3. 后台数据导出</span>
+        <span class="priority-tag urgent">4. 活动结束反馈表</span>
+        <span class="priority-tag urgent">5. 活动成果展示</span>
+      </div>
+      <p style="font-size:13px;color:#888;margin-top:8px;">这几个功能能直接服务政府汇报，让协会从「临时拉群组织活动」升级为「有数字化管理能力的青年社会组织」，直接提升公信力和项目承接能力。</p>
+    </div>
+
+    <!-- 3.4 路径二详解 -->
+    <div class="card">
+      <h3>四、路径二：洛阳青年文旅户外消费入口中的小程序定位</h3>
+
+      <div class="mp-path-card" style="margin-bottom:16px;">
+        <div class="mp-header">
+          <div class="mp-icon i2">二</div>
+          <div>
+            <div style="font-weight:700;font-size:16px;">小程序在该路径中的角色</div>
+            <div style="font-size:13px;color:#888;">匹配度：中等。有潜力，但当前能力不够完整。</div>
+          </div>
+        </div>
+        <div class="highlight-box purple">
+          <strong>青年活动报名入口 + 用户沉淀入口。</strong><br>
+          现阶段不要指望它成为高频社区。现实任务是让用户每次报名都从这里走，让协会知道谁参加过什么活动，让用户逐步形成「看活动上小程序」的习惯。
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>活动类型</th><th>是否适合当前小程序</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>周末轻徒步</td><td><span class="cap-tag has">适合</span></td><td>高频轻量，适合作为主要报名渠道</td></tr>
+            <tr><td>城市定向</td><td><span class="cap-tag has">适合基础版</span></td><td>简单定向可用，复杂需升级</td></tr>
+            <tr><td>露营社交</td><td><span class="cap-tag mid">基本适合</span></td><td>需补充装备清单和注意事项</td></tr>
+            <tr><td>骑行活动</td><td><span class="cap-tag mid">基本适合</span></td><td>需风险告知</td></tr>
+            <tr><td>文旅体验</td><td><span class="cap-tag has">适合</span></td><td>与景区合作需展示位</td></tr>
+            <tr><td>青年交友</td><td><span class="cap-tag mid">需优化</span></td><td>需隐私保护和分组设计</td></tr>
+            <tr><td>亲子户外</td><td><span class="cap-tag mid">需优化</span></td><td>需增加家庭报名字段</td></tr>
+            <tr><td>高频社群活动</td><td><span class="cap-tag miss">不一定适合</span></td><td>微信群更快，小程序不要强求覆盖</td></tr>
+            <tr><td>临时小活动</td><td><span class="cap-tag miss">不适合强制使用</span></td><td>降低门槛，不要为用而用</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>该路径下最应该补的功能（按优先级）</h4>
+      <div class="tag-row">
+        <span class="priority-tag soon">1. 活动日历</span>
+        <span class="priority-tag soon">2. 我的报名/我的活动</span>
+        <span class="priority-tag soon">3. 兴趣标签</span>
+        <span class="priority-tag soon">4. 基础会员身份</span>
+        <span class="priority-tag soon">5. 社群入口</span>
+        <span class="priority-tag soon">6. 活动反馈</span>
+        <span class="priority-tag soon">7. 会员专属活动或会员价</span>
+      </div>
+      <p style="font-size:13px;color:#888;margin-top:8px;">积分、等级可以暂缓。核心目标：从「每场活动重新拉人」变成「有一批可重复触达、可分类运营的青年用户」。前提是活动稳定、统一报名、参与记录被沉淀、公众号+微信群+小程序形成组合。</p>
+    </div>
+
+    <!-- 3.5 路径三详解 -->
+    <div class="card">
+      <h3>五、路径三：区域户外产业生态组织中的小程序定位</h3>
+
+      <div class="mp-path-card" style="margin-bottom:16px;">
+        <div class="mp-header">
+          <div class="mp-icon i3">三</div>
+          <div>
+            <div style="font-weight:700;font-size:16px;">小程序在该路径中的角色</div>
+            <div style="font-size:13px;color:#888;">匹配度：当前较低，但未来价值很大。现阶段不急。</div>
+          </div>
+        </div>
+        <div class="highlight-box" style="background:#ecfdf5;border:1px solid #6ee7b7;">
+          <strong>现阶段：会员单位活动展示和协会资源展示入口。</strong><br>
+          <strong>未来：协会会员企业与青年用户之间的线上连接平台。</strong><br>
+          前提条件：先有稳定活动、真实青年用户、可用数据、会员权益规则、活动审核机制。否则过早开放会变成「会员单位广告发布平台」，损害协会公信力。
+        </div>
+      </div>
+
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>内容类型</th><th>当前是否适合</th><th>说明</th></tr></thead>
+          <tbody>
+            <tr><td>协会官方活动</td><td><span class="cap-tag has">适合</span></td><td>已有能力匹配</td></tr>
+            <tr><td>会员单位联名活动</td><td><span class="cap-tag mid">适合，但需审核</span></td><td>需要审核机制，防止滥用</td></tr>
+            <tr><td>景区体验活动</td><td><span class="cap-tag has">适合</span></td><td>需要展示专区</td></tr>
+            <tr><td>商家福利活动</td><td><span class="cap-tag mid">勉强适合</span></td><td>需要专区隔离，避免冲击官方活动</td></tr>
+            <tr><td>会员企业展示</td><td><span class="cap-tag miss">需要新增模块</span></td><td>当前无此功能</td></tr>
+            <tr><td>资源对接</td><td><span class="cap-tag miss">当前不适合</span></td><td>线下对接更高效</td></tr>
+            <tr><td>赞助商数据反馈</td><td><span class="cap-tag miss">当前不适合</span></td><td>需数据报表能力积累</td></tr>
+            <tr><td>产业资源图谱</td><td><span class="cap-tag miss">不适合或需单独页面</span></td><td>建议先做线下版本</td></tr>
+            <tr><td>认证活动发布</td><td><span class="cap-tag miss">需要审核机制</span></td><td>审核流程必须先建立</td></tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>该路径下最应该补的功能（分阶段，不一次做完）</h4>
+      <div class="tag-row">
+        <span class="priority-tag later">1. 会员单位认证身份</span>
+        <span class="priority-tag later">2. 会员单位活动发布申请</span>
+        <span class="priority-tag later">3. 协会审核机制</span>
+        <span class="priority-tag later">4. 商家/景区展示专区</span>
+        <span class="priority-tag later">5. 赞助商露出位</span>
+        <span class="priority-tag later">6. 活动数据反馈报表</span>
+        <span class="priority-tag later">7. 青年友好商家/场地推荐</span>
+        <span class="priority-tag later">8. 户外线路推荐</span>
+      </div>
+      <p style="font-size:13px;color:#888;margin-top:8px;">等用户和活动数据有一定基础后再做，避免过早开放变成广告平台。</p>
+    </div>
+
+    <!-- 3.6 赛事路径 -->
+    <div class="card">
+      <h3>六、赛事活动路径：小程序暂时不适合作为主平台</h3>
+      <p style="font-size:14px;color:#555;margin-bottom:14px;">赛事不是普通活动，它需要更专业的系统。小程序当前无法满足赛事功能需求，这个判断需要明确。</p>
+
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th style="width:45%;">适合用小程序做</th><th style="width:55%;">不适合用小程序做</th></tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>
+                <ul style="margin:0;padding-left:16px;font-size:13px;">
+                  <li>赛事宣传入口</li><li>赛事介绍页面</li><li>简单报名入口</li>
+                  <li>赛事结果展示</li><li>赛事照片回顾</li><li>后续活动召回入口</li>
+                </ul>
+              </td>
+              <td>
+                <ul style="margin:0;padding-left:16px;font-size:13px;">
+                  <li>多组别复杂报名</li><li>队伍报名</li><li>号码牌管理</li>
+                  <li>计时计分</li><li>成绩排名</li><li>裁判系统</li>
+                  <li>证书生成</li><li>赛事保险</li><li>物资管理</li><li>赛道管理</li>
+                </ul>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <h4>赛事活动分级处理建议</h4>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>赛事类型</th><th>推荐方式</th></tr></thead>
+          <tbody>
+            <tr><td>轻量体验赛</td><td><span class="priority-tag done">小程序可承载报名</span></td></tr>
+            <tr><td>100-300 人趣味赛</td><td><span class="priority-tag soon">小程序报名 + 人工管理</span></td></tr>
+            <tr><td>正式体育赛事</td><td><span class="priority-tag later">第三方赛事系统</span></td></tr>
+            <tr><td>大型赛事 IP</td><td><span class="priority-tag later">单独赛事模块或独立系统</span></td></tr>
+            <tr><td>偶发赛事</td><td><span class="priority-tag later">不建议开发专门功能</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3.7 功能优先级对照表 -->
+    <div class="card">
+      <h3>七、三条路径下的小程序功能优先级对照表</h3>
+      <p style="font-size:14px;color:#555;margin-bottom:14px;">同一个功能，在不同路径中的优先级完全不同。以下按路径分别标注。</p>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr><th>功能模块</th><th>路径一：公共服务</th><th>路径二：消费入口</th><th>路径三：产业生态</th><th>当前建议</th></tr>
+          </thead>
+          <tbody>
+            <tr><td>活动发布</td><td><span class="priority-tag done">高</span></td><td><span class="priority-tag done">高</span></td><td>中</td><td>已有，继续强化</td></tr>
+            <tr><td>活动报名</td><td><span class="priority-tag done">高</span></td><td><span class="priority-tag done">高</span></td><td>中</td><td>已有，继续统一入口</td></tr>
+            <tr><td>风险告知</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td>中</td><td><span class="priority-tag urgent">优先补</span></td></tr>
+            <tr><td>签到核销</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td>中</td><td><span class="priority-tag urgent">优先补</span></td></tr>
+            <tr><td>后台数据导出</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">优先补</span></td></tr>
+            <tr><td>活动反馈表</td><td><span class="priority-tag urgent">高</span></td><td><span class="priority-tag urgent">高</span></td><td>中</td><td><span class="priority-tag urgent">优先补</span></td></tr>
+            <tr><td>活动日历</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>中</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
+            <tr><td>我的活动</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>低</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
+            <tr><td>兴趣标签</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>中</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
+            <tr><td>个人会员身份</td><td>中</td><td><span class="priority-tag soon">高</span></td><td>中</td><td><span class="priority-tag soon">3-6 月补</span></td></tr>
+            <tr><td>企业会员身份</td><td>低</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">6-12 月补</span></td></tr>
+            <tr><td>会员单位发布活动</td><td>低</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">暂缓，需审核机制</span></td></tr>
+            <tr><td>商家/景区展示</td><td>低</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">暂缓或试点</span></td></tr>
+            <tr><td>赞助商反馈</td><td>中</td><td>中</td><td><span class="priority-tag soon">高</span></td><td><span class="priority-tag later">6-12 月补</span></td></tr>
+            <tr><td>积分等级</td><td>低</td><td>中</td><td>低</td><td><span class="priority-tag later">暂缓</span></td></tr>
+            <tr><td>评论区</td><td>低</td><td>中</td><td>低</td><td><span class="priority-tag later">暂缓</span></td></tr>
+            <tr><td>志愿者/领队身份</td><td>中</td><td>中</td><td>中</td><td><span class="priority-tag later">可做轻量版</span></td></tr>
+            <tr><td>完整赛事系统</td><td>低</td><td>低</td><td>中</td><td><span class="priority-tag later">不建议现在做</span></td></tr>
+            <tr><td>轻赛事报名</td><td>中</td><td>中</td><td>中</td><td><span class="priority-tag later">可按需做</span></td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+
+    <!-- 3.8 每个路径中的表达方式 -->
+    <div class="card">
+      <h3>八、三个路径中，小程序分别该怎么讲述</h3>
+      <p style="font-size:14px;color:#555;margin-bottom:14px;">如果把小程序放进协会发展路径的对外/对内表达中，以下是适配每条路径定位的表述方式：</p>
+
+      <div class="quote-block qb-blue">
+        <strong>路径一中的表达（公共服务平台）：</strong><br>
+        小程序主要承担协会正式活动、政府项目、公益活动的数字化管理功能，解决活动报名、人员统计、签到确认、反馈收集和数据汇报问题，使协会具备更强的公共服务承接能力。
+      </div>
+      <div class="quote-block qb-purple">
+        <strong>路径二中的表达（青年文旅消费入口）：</strong><br>
+        小程序主要承担青年用户沉淀和活动复购功能，通过活动日历、报名记录、兴趣标签、会员身份和社群入口，逐步形成洛阳青年户外兴趣用户池。
+      </div>
+      <div class="quote-block">
+        <strong>路径三中的表达（产业生态组织）：</strong><br>
+        小程序未来可作为会员企业、景区营地、赞助商和青年用户之间的线上连接平台，通过认证活动发布、会员单位展示、商家福利、赞助反馈和户外线路推荐，提升协会对产业资源的组织能力。
+      </div>
+    </div>
+
+    <!-- 3.9 优先服务顺序 -->
+    <div class="card">
+      <h3>九、当前小程序最适合先服务哪条路径</h3>
+
+      <div class="three-layer-wrap">
+        <div class="tl-card tl-1">
+          <div class="tl-icon">第一优先</div>
+          <div class="tl-title">路径一：公共服务平台</div>
+          <div class="tl-target">1-3 月重点</div>
+          <div class="tl-desc">
+            最需要基础数据，而不一定要求高频使用。小程序当前能力最能匹配：活动发布+报名+签到+数据导出。
+          </div>
+        </div>
+        <div class="tl-card tl-2">
+          <div class="tl-icon">第二优先</div>
+          <div class="tl-title">路径二：青年活动运营</div>
+          <div class="tl-target">3-6 月重点</div>
+          <div class="tl-desc">
+            有潜力但需要补用户运营功能：活动日历、我的活动、兴趣标签、会员身份、社群入口。
+          </div>
+        </div>
+        <div class="tl-card tl-3">
+          <div class="tl-icon">第三优先</div>
+          <div class="tl-title">路径三：产业生态</div>
+          <div class="tl-target">6-12 月重点</div>
+          <div class="tl-desc">
+            暂时不要急。要等前两者沉淀出用户和数据后再做，否则会变成会员单位广告发布平台。
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 3.10 嵌入路线图 -->
+    <div class="card">
+      <h3>十、小程序嵌入协会战略的分阶段路线图</h3>
+
+      <div class="step-flow">
+        <div class="step s1">
+          <div class="st-time">第 1–3 月</div>
+          <div class="st-goal">服务路径一为主</div>
+          <div class="st-detail">
+            <strong>要补的功能：</strong><br>
+            · 正式活动报名（已有）<br>
+            · 风险告知<br>
+            · 签到核销<br>
+            · 数据导出<br>
+            · 反馈表<br><br>
+            <strong>目标：</strong><br>
+            让协会正式活动数字化。
+          </div>
+        </div>
+        <div class="step s2">
+          <div class="st-time">第 3–6 月</div>
+          <div class="st-goal">服务路径二为主</div>
+          <div class="st-detail">
+            <strong>要补的功能：</strong><br>
+            · 活动日历<br>
+            · 我的活动<br>
+            · 兴趣标签<br>
+            · 个人会员<br>
+            · 社群入口<br><br>
+            <strong>目标：</strong><br>
+            让协会开始沉淀青年用户。
+          </div>
+        </div>
+        <div class="step s3">
+          <div class="st-time">第 6–12 月</div>
+          <div class="st-goal">开始服务路径三</div>
+          <div class="st-detail">
+            <strong>要补的功能：</strong><br>
+            · 会员单位展示<br>
+            · 认证活动申请<br>
+            · 商家福利<br>
+            · 赞助商反馈<br>
+            · 景区线路推荐<br><br>
+            <strong>目标：</strong><br>
+            让协会开始连接产业资源。
+          </div>
+        </div>
+      </div>
+
+      <div class="highlight-box amber" style="margin-top:16px;">
+        <div class="hl-title">嵌入原则</div>
+        <strong>先服务公共服务，后服务青年用户，再服务产业生态。</strong>小程序不是一开始就要做成大而全的平台，而是按协会战略的推进节奏，分层释放能力。每个阶段只补对应路径最需要的功能，不贪多。
+      </div>
+    </div>
+
+    <!-- 3.11 最终判断 -->
+    <div class="card" style="border: 2px solid var(--teal);">
+      <h3>十一、最终判断</h3>
+      <p style="font-size:15px;line-height:1.9;color:#333;">
+        小程序当然可以匹配到不同路径中，但关键不在于「能不能用」，而在于<strong>每条路径中它扮演什么角色、承担什么功能、需要补什么能力</strong>。
+      </p>
+      <div style="font-size:14px;line-height:1.9;color:#444;margin-top:10px;">
+        <p>更准确的三阶段定位：</p>
+        <p style="margin:12px 0;padding:12px 16px;background:#f0fdfa;border-radius:8px;">
+          <strong>当前：</strong>协会正式活动的<strong>数字化入口</strong>（活动发布+报名+签到+数据导出）
+        </p>
+        <p style="margin:12px 0;padding:12px 16px;background:#f5f3ff;border-radius:8px;">
+          <strong>中期：</strong>青年用户的<strong>运营入口</strong>（活动日历+我的活动+兴趣标签+会员身份+社群）
+        </p>
+        <p style="margin:12px 0;padding:12px 16px;background:#ecfdf5;border-radius:8px;">
+          <strong>长期：</strong>会员企业和产业资源的<strong>连接入口</strong>（认证展示+商家福利+赞助反馈+线路推荐）
+        </p>
+      </div>
+      <p style="font-size:14px;color:#555;margin-top:12px;">
+        小程序在三条路径中的发展顺序应该是：<strong>先服务公共服务 → 后服务青年用户 → 再服务产业生态</strong>。不是一开始就想把它做成大而全的平台。
+      </p>
     </div>
   </div>
 
